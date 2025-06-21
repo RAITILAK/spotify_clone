@@ -1,6 +1,6 @@
 import { User } from "../models/user.model.js";
 
-export const getAllUsers = async (req, resizeBy, next) => {
+export const getAllUsers = async (req, res, next) => {
   try {
     //excluding current user from the chat space
     const currentUserId = req.auth.userId;

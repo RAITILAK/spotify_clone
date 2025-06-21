@@ -4,7 +4,7 @@ import { getAllUsers } from "../controller/user.controller.js";
 
 const router = Router();
 
-router.get("/like", protectedRoute, getAllUsers);
+router.get("/", protectedRoute, getAllUsers);
 //get messages between two users todo
 
 export default router;

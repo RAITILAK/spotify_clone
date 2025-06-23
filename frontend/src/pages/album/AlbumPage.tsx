@@ -26,7 +26,7 @@ const gradientColors = [
   "#84cc16", // lime
 ];
 
-const formatDuration = (seconds: number) => {
+export const formatDuration = (seconds: number) => {
   const minutes = Math.floor(seconds / 60);
   const remainigSeconds = seconds % 60;
   return `${minutes}:${remainigSeconds.toString().padStart(2, "0")}`;

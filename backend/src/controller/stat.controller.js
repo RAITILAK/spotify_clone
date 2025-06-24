@@ -28,7 +28,7 @@ export const getStats = async (req, res, next) => {
             },
           },
           {
-            $cpunt: "count",
+            $count: "count",
           },
         ]),
       ]);

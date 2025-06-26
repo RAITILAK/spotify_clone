@@ -5,7 +5,7 @@ import cloudinary from "../lib/cloudinary.js";
 //helper function for cloudinary or image/song upload's
 const uploadToCloudinary = async (file) => {
   try {
-    const result = await cloudinary.uploader.upload(file.tempfilePath, {
+    const result = await cloudinary.uploader.upload(file.tempFilePath, {
       resource_type: "auto",
     });
     return result.secure_url;

@@ -48,4 +48,14 @@ cd backend
 npm install
 npm run dev
 
-# Don't forget to create your
+# .env
+PORT=
+MONGODB_URI=
+ADMIN_EMAIL=
+NODE_ENV=
+CLOUDINARY_API_KEY=
+CLOUDINARY_API_SECRET=
+CLOUDINARY_CLOUD_NAME=
+CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+

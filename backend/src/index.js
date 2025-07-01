@@ -85,6 +85,8 @@ if (process.env.NODE_ENV === "production") {
 
 //error handler
 app.use((err, req, res, next) => {
+  console.error("🔥 Error:", err); // 👈 add this line to log full error in console/logs
+
   res.status(500).json({
     message:
       process.env.NODE_ENV === "production"

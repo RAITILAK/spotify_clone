@@ -13,5 +13,12 @@ export default defineConfig({
   },
   server: {
     port: 3000,
+    proxy: {
+      "/api": {
+        target: "https://spotify-clone-jquy.onrender.com",
+        changeOrigin: true,
+        secure: false,
+      },
+    },
   },
 });

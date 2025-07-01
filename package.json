@@ -1,0 +1,13 @@
+{
+  "name": "spotify-clone",
+  "version": "1.0.0",
+  "description": "A full-stack Spotify clone built using React, Node.js, Express, MongoDB, and Socket.io.\r This project includes real-time chat, music streaming, playback controls, admin dashboard, and user activity monitoring \r — all in one seamless app.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm start --prefix backend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

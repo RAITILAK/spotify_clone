@@ -13,7 +13,8 @@
         "./src/*"
       ]
     },
-
+  /* Fixes */
+    "types": ["vite/client", "node"],
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,

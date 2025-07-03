@@ -16,7 +16,7 @@ import adminRoutes from "./routes/admin.route.js";
 import authRoutes from "./routes/auth.route.js";
 import songRoutes from "./routes/song.route.js";
 import albumRoutes from "./routes/album.route.js";
-import statRoutes from "./routes/stat.router.js";
+import statRoutes from "./routes/stat.route.js";
 
 dotenv.config();
 
@@ -77,9 +77,9 @@ app.use("/api/albums", albumRoutes);
 app.use("/api/stats", statRoutes);
 
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "../dist")));
+  app.use(express.static(path.join(__dirname, "../../frontend/dist")));
   app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "../dist/index.html"));
+    res.sendFile(path.resolve(__dirname, "../../frontend/dist/index.html"));
   });
 }
 

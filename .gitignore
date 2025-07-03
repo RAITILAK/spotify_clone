@@ -16,6 +16,9 @@ build
 .next
 out
 
+*.cmd
+*.ps1
+
 # OS files
 .DS_Store
 Thumbs.db

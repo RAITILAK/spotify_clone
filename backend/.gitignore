@@ -1,2 +1,16 @@
 .env
 node_modules
+
+# Common node/npm
+node_modules/
+package-lock.json
+dist/
+.temp/
+temp/
+.env
+*.cmd
+*.ps1
+mime
+semver
+nodemon
+nodetouch

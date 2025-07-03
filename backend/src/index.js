@@ -49,7 +49,7 @@ try {
     cors({
       origin: [
         "http://localhost:3000",
-        "https://spotify-clone-4toy.onrender.com", // Replace with current live domain
+        "https://spotify-clone-4fq4.onrender.com", // Replace with current live domain
       ],
       credentials: true,
     })

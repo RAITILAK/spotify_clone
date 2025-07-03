@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: spotify-clone
+    env: node
+    buildCommand: |
+      npm install
+      npm --workspace frontend run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
+
+      # Backend .env
+      - fromDotEnv: MONGODB_URI
+      - fromDotEnv: CLERK_SECRET_KEY
+      - fromDotEnv: CLOUDINARY_API_KEY
+      - fromDotEnv: CLOUDINARY_API_SECRET
+      - fromDotEnv: CLOUDINARY_CLOUD_NAME
+      - fromDotEnv: ADMIN_EMAIL
+
+      # Frontend .env
+      - fromDotEnv: VITE_CLERK_PUBLISHABLE_KEY

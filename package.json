@@ -1,31 +1,13 @@
 {
   "name": "spotify-clone",
-  "private": true,
   "version": "1.0.0",
-  "description": "A full-stack Spotify clone...",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "npm --workspace frontend run build",
-    "start": "npm --workspace backend start",
-    "dev:frontend": "npm --workspace frontend run dev",
-    "dev:backend": "npm --workspace backend run dev",
-    "build": "npm --workspace frontend run build",
-    "build:all": "npm --workspace frontend run build",
-    "install:all": "npm install && npm --workspace=frontend install && npm --workspace=backend install"
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm start --prefix backend"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "workspaces": [
-    "frontend",
-    "backend"
-  ],
-  "devDependencies": {
-    "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.6",
-    "@vitejs/plugin-react": "^4.6.0",
-    "eslint": "^9.0.0",
-    "typescript": "^5.8.3",
-    "vite": "^6.3.5"
-  }
+  "license": "ISC"
 }

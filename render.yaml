@@ -3,9 +3,8 @@ services:
     name: spotify-clone
     env: node
     buildCommand: |
-      NODE_ENV=development npm install
-      npm install --workspace=frontend
-      npm install --workspace=backend
+      cd frontend && NODE_ENV=development npm install && cd ..
+      cd backend && npm install && cd ..
       npm run build:all
     startCommand: npm start
     envVars:

@@ -21,7 +21,7 @@ export default defineConfig({
   },
   //debugging
   build: {
-    outDir: "/dist",
+    outDir: "dist",
     emptyOutDir: true,
   },
 });

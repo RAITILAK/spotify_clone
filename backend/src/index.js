@@ -102,9 +102,8 @@ try {
 
 // ✅ Serve frontend in production
 if (process.env.NODE_ENV === "production") {
-  const frontendPath = path.join(__dirname, "../../frontend/dist");
-  console.log("🛠 Serving static frontend from:", frontendPath);
-
+  const frontendPath = path.join(__dirname, "../frontend/dist");
+  console.log("📁 Resolved frontend path:", frontendPath); // ✅ Add this
   app.use(express.static(frontendPath));
   app.get("*", (req, res) => {
     res.sendFile(path.resolve(frontendPath, "index.html"));

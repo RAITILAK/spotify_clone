@@ -10,7 +10,8 @@
     "dev:frontend": "npm --workspace frontend run dev",
     "dev:backend": "npm --workspace backend run dev",
     "build": "npm --workspace frontend run build",
-    "build:all": "npm --workspace frontend run build && npm --workspace backend run build"
+    "build:all": "npm --workspace frontend run build",
+    "install:all": "npm install && npm --workspace=frontend install && npm --workspace=backend install"
   },
   "keywords": [],
   "author": "",

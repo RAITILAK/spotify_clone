@@ -8,6 +8,7 @@ lerna-debug.log*
 
 # Dependency folders
 node_modules/
+package-lock.json
 dist/
 dist-ssr/
 .temp/

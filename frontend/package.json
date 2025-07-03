@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@clerk/clerk-react": "^5.25.5",
@@ -29,6 +29,7 @@
     "react-router-dom": "^7.6.2",
     "socket.io-client": "^4.8.1",
     "tailwind-merge": "^3.0.2",
+    "tailwindcss-animate": "^1.0.7",
     "tw-animate-css": "^1.2.5",
     "zustand": "^5.0.5"
   },

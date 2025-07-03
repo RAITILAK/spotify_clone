@@ -33,7 +33,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:3000",
-      "https://spotify-clone-jquy.onrender.com",
+      "https://spotify-clone-4toy.onrender.com",
     ],
     credentials: true,
   })
